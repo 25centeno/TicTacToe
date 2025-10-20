@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Tic Tac Toe</title>
+
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1 id="Title">Tic Tac Toe</h1>
+
+        </header>
+
+        <article>
+
+            <div id="sidebarLeft">
+
+                <h2>Score Tracker</h2>
+
+                <p><a class="x">X</a> Wins: <a id="P1WinTracker">0</a></p>
+
+                <p><a class="o">O</a> Wins: <a id="P2WinTracker">0</a></p>
+
+                <p>Ties: <a id="TieTracker">0</a></p>
+
+                <h2>Misc Tracker</h2>
+
+                <p>Time: <a id="TimeTracker">0</a></p>
+
+                <p>TotalGames: <a id="TotalGamesTracker">0</a></p>
+
+                <p>TotalMoves: <a id="TotalMovesTracker">0</a></p>
+
+                <p title="This guy 💀">Wolfy: <a title="do not click this 💔" onclick="Secret()" id="StupidThing">67</a></p>
+
+                <button id="resetStats" onclick="Game(-67)">Reset Stats</button>
+
+            </div>
+
+            <div id="sidebarRight">
+
+                <h2>How 2 Play</h2>
+
+                <p>
+                    First Player is <a class="x">X</a> or Player1.<br>
+                    <br>
+                    While Second Player is <a class="o">O</a> or Player2.<br>
+                    <br>
+                    Player1 always goes first then Player2 starts first next!<br>
+                    <br>
+                    Try to get 3 in a row Vertically, Diagonally, or Horizontally!<br>
+                    <br>
+                    If no one gets 3 in a row and all squares are full. That will be a tie and no one wins.<br>
+                    <br>
+                    You can make up who wins fully like "Best Out Of 3"!
+                </p>
+
+            </div>
+
+            <section id="GameArea">
+
+                <h3 id="WinnerDisplay">Winner Display Here</h3>
+
+                <div id="Board">
+
+                    <div class="Row">
+
+                        <div class="GameButtonDiv">
+
+                            <button class="GameButton" id="GameButton1" onclick="Game(1)"></button>
+
+                        </div>
+
+                        <div class="GameButtonDiv">
+
+                            <button class="GameButton" id="GameButton2" onclick="Game(2)"></button>
+
+                        </div>
+
+                        <div class="GameButtonDiv">
+                            
+                            <button class="GameButton" id="GameButton3" onclick="Game(3)"></button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="Row">
+
+                        <div class="GameButtonDiv">
+
+                            <button class="GameButton" id="GameButton4" onclick="Game(4)"></button>
+
+                        </div>
+
+                        <div class="GameButtonDiv">
+
+                            <button class="GameButton" id="GameButton5" onclick="Game(5)"></button>
+
+                        </div>
+
+                        <div class="GameButtonDiv">
+
+                            <button class="GameButton" id="GameButton6" onclick="Game(6)"></button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="Row">
+
+                        <div class="GameButtonDiv">
+
+                            <button class="GameButton" id="GameButton7" onclick="Game(7)"></button>
+
+                        </div>
+
+                        <div class="GameButtonDiv">
+
+                            <button class="GameButton" id="GameButton8" onclick="Game(8)"></button>
+
+                        </div>
+
+                        <div class="GameButtonDiv">
+
+                            <button class="GameButton" id="GameButton9" onclick="Game(9)"></button>
+
+                        </div>
+
+                    </div>
+
+                    <button id="Reset" onclick="Game(10)">Reset Board</button>
+
+                </div>
+
+            </section>
+
+        </article>
+
+        <footer>
+
+            <script src="script.js"></script>
+
+        </footer>
+
+    </body>
+
+</html>
